@@ -1,0 +1,25 @@
+.planetForm label {
+    font-weight: 700;
+  }
+  
+  .planetForm input,
+  .planetForm textarea {
+    background-color: #333;
+    border: 1px solid #333;
+    display: block;
+    font-size: 1rem;
+    margin: .5rem 0 1rem;
+    padding: 1rem;
+    width: 24rem;
+  }
+  
+  .planetForm button {
+    background-color: #009fff;
+    border: none;
+    color: #0a0a0a;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+  }

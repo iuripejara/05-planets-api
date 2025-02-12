@@ -1,0 +1,16 @@
+.planet {
+    border: 1px solid #333;
+    padding: 1rem;
+    position: relative;
+    width: 24rem;
+  }
+  
+  .deleteBtn {
+    background-color: rgba(246, 67, 73, 0.25);
+    border: none;
+    cursor: pointer;
+    padding: .25rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
