@@ -2,6 +2,7 @@ import { PlanetForm } from "@/components/PlanetForm";
 import { PlanetItem } from "@/components/PlanetItem";
 import styles from '../app/page.module.css';
 import { getPlanets } from "@/models/Planet";
+import { Suspense } from "react";
 
 export default async function Home() {
   
@@ -14,7 +15,10 @@ export default async function Home() {
         </h1>
         
       <div className={styles.container}>
-        <PlanetForm  />
+        <Suspense fallback={<h2>Carregando formulario......</h2>} >
+          <PlanetForm  />
+        </Suspense>
+        
 
         <section className={styles.planets}>
            {planets.map((planet) => (

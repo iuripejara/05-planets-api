@@ -1,5 +1,6 @@
 import { pool } from "@/database/pool";
 
+
 export interface Planet {
     id: number
     name: string
@@ -13,7 +14,10 @@ interface CreatePlanetParams {
     imageUrl: string
 }
 
+
+
 export async function getPlanets() {
+    
     const result = await pool.query('SELECT id, name, description, image_url AS "imageUrl" FROM planets;')
     const planets: Planet[] = result.rows;
     return planets
